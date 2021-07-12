@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: sans-serif;
+            font-size: 15px;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 52px 45px;
+            background-color: #FAFAFA;
+            color: hsl(234, 12%, 34%);
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 40px;
+        }
+        
+        .top-section {
+            gap: 20px;
+            text-align: center;
+            max-width: 450px;
+            margin: auto;
+        }
+        
+        .title_first {
+            text-align: center;
+            line-height: 3 rem;
+            font-weight: 400;
+        }
+        
+        .title_second {
+            text-align: center;
+            line-height: 3 rem;
+            font-weight: 800;
+        }
+        
+        .title_description {
+            text-align: center;
+            color: lightgray;
+        }
+        
+        .bottom-section {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .cards {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            flex-wrap: wrap;
+            max-width: 1238px;
+        }
+        
+        .card {
+            width: 326px;
+            border-radius: 10px;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            box-shadow: 0 4px 8px 0 rgba(65, 62, 62, 0.2);
+            padding: 20px;
+            gap: 10px;
+        }
+        
+        .card_title {
+            font-weight: 400;
+        }
+        
+        .card_description {
+            font-weight: 200;
+        }
+        
+        .card-1 {
+            border-top: 4px solid turquoise;
+            transform: translate(0px, 100px);
+        }
+        
+        .card-2 {
+            border-top: 4px solid red;
+        }
+        
+        .card-3 {
+            border-top: 4px solid royalblue;
+            transform: translate(0px, 100px);
+        }
+        
+        .card-4 {
+            border-top: 4px solid sandybrown;
+        }
+        
+        .icon {
+            text-align: end;
+        }
+        
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            width: 100%;
+            margin-top: 5%;
+        }
+        
+        .attribution a {
+            color: violet;
+            text-decoration: none;
+        }
+        
+        @media(max-width:600px) {
+            body {
+                padding: 20px;
+            }
+            .title_second {
+                font-weight: 400;
+            }
+            .bottom-section {
+                display: flex;
+                flex-direction: column;
+            }
+            .cards {
+                padding: 10px 10px;
+            }
+            .card-1 {
+                transform: translate(-1px, 0px);
+            }
+            .card-3 {
+                transform: translate(-1px, 0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <section class="top-section">
+            <h1 class="title_first">
+                Reliable, efficient delivery
+            </h1>
+            <h1 class="title_second">
+                Powered by Technology
+            </h1>
+            <p class="title_description">
+                Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+            </p>
+        </section>
+        <section class="bottom-section">
+            <div class="cards">
+                <div class="card card-1">
+                    <h1 class="card_title">Supervisor</h1>
+                    <p class="card_description">
+                        Monitors activity to identify project roadblocks
+                    </p>
+                    <i class="icon"><img src="images/icon-supervisor.svg" alt="supervisor-icon"></i>
+                </div>
+
+                <div class="card card-2">
+                    <h1 class="card_title"> Team Builder</h1>
+                    <p class="card_description">
+                        Scans our talent network to create the optimal team for your project
+                    </p>
+                    <i class="icon"><img src="images/icon-team-builder.svg" alt=""></i>
+                </div>
+                <div class="card card-3">
+                    <h1 class="card_title">Karma</h1>
+                    <p class="card_description">
+                        Regularly evaluates our talent to ensure quality
+                    </p>
+                    <i class="icon"><img src="images/icon-karma.svg" alt=""></i>
+                </div>
+                <div class="card card-4">
+                    <h1 class="card_title"> Calculator</h1>
+                    <p class="card_description">
+                        Uses data from past projects to provide better delivery estimates
+                    </p>
+                    <i class="icon"><img src="images/icon-calculator.svg" alt=""></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="">Basanta Bhusan Khadka</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
